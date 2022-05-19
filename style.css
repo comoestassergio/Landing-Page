@@ -1,0 +1,95 @@
+:root {
+    --backgr-color: #1f2937;
+    --secondary-color: #e5e7eb; 
+    --hero-main-txt: #f9faf8;
+    --btn-clr: #3882f6;
+    --qt-section-bgr-clr: #e5e7eb;
+    --qt-text-clr: #1f2937;
+}
+
+* {
+    font-family: monospace;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 0 4em;
+
+    background-color: var(--backgr-color);
+}
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.nav-links > li > a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 18px;
+}
+
+.logo {
+    color: var(--hero-main-txt);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: row;
+
+    padding: 4em;
+
+    background-color: var(--backgr-color);
+}
+
+.main-section-text {
+    flex: 1;
+}
+
+.main-section-text > h1 {
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: var(--hero-main-txt);
+
+    margin-bottom: 0;
+}
+
+.main-section-text > p {
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+.main-section-img {
+    flex: 1;
+}
+
+.sign-up-btn {
+    padding: .5em 1.5em;
+
+    border-radius: .4em;
+    border: none;
+    background-color: var(--btn-clr);
+    color: var(--hero-main-txt);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.main-section-img {
+    background: url(/dynamic-wang-_F7Z0hnFpRI-unsplash.jpg);
+    background-size: cover;
+    border-radius: 1em;
+}
