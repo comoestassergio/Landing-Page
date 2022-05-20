@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
+
 :root {
     --backgr-color: #1f2937;
     --secondary-color: #e5e7eb; 
@@ -8,7 +11,7 @@
 }
 
 * {
-    font-family: monospace;
+    font-family: Montserrat;
 }
 
 html, body {
@@ -21,7 +24,7 @@ html, body {
     flex-direction: row;
     justify-content: space-between;
 
-    padding: 0 4em;
+    padding: 0 10em;
 
     background-color: var(--backgr-color);
 }
@@ -41,6 +44,10 @@ html, body {
     font-size: 18px;
 }
 
+.nav-links > li:hover {
+    font-weight: bold;
+}
+
 .logo {
     color: var(--hero-main-txt);
     font-size: 24px;
@@ -51,9 +58,11 @@ html, body {
     display: flex;
     flex-direction: row;
 
-    padding: 4em;
+    padding: 4em 10em 6em;
 
     background-color: var(--backgr-color);
+
+    gap: 5em;
 }
 
 .main-section-text {
@@ -66,11 +75,14 @@ html, body {
     color: var(--hero-main-txt);
 
     margin-bottom: 0;
+
+    max-width: 22rem;
 }
 
 .main-section-text > p {
     font-size: 18px;
     color: var(--secondary-color);
+    max-width: 35rem;
 }
 
 .main-section-img {
@@ -86,10 +98,153 @@ html, body {
     color: var(--hero-main-txt);
     font-weight: bold;
     font-size: 18px;
+
+    margin-top: 1rem;
+
+    transition: transform 100ms;
+}
+
+.sign-up-btn:hover {
+    cursor: pointer;
+    transform: scale(1.03);
 }
 
 .main-section-img {
-    background: url(/dynamic-wang-_F7Z0hnFpRI-unsplash.jpg);
+    background: url(/images/dynamic-wang-irn9H9-Kfq4-unsplash.jpg);
     background-size: cover;
     border-radius: 1em;
+}
+
+.main-section-img > img {
+    height: 5rem
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 4rem;
+}
+
+.info-section > h2 {
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: var(--qt-text-clr);
+
+    margin: 3rem 0 6rem;
+}
+
+.card-container {
+    display: flex;
+    gap: 5rem;
+}
+
+.card > img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 3rem;
+}
+
+.card > p {
+    text-align: center;
+    max-width: 12rem;
+    line-height: 1.5rem;
+}
+
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--qt-section-bgr-clr);
+
+    padding: 5rem 0;
+}
+
+.quote {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 36px;
+    color: var(--qt-text-clr);
+    max-width: 50rem;
+
+    margin-bottom: 1rem;
+}
+
+.signature {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.action-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 6rem 0;
+}
+
+.action {
+    background-color: var(--btn-clr);
+    padding: 3rem 10rem;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 3rem;
+}
+
+.action-header {
+    color: var(--secondary-color);
+    font-size: 24px;
+    font-weight: bold;
+
+    margin-bottom: 0;
+}
+
+.action-subtext {
+    color: var(--secondary-color);
+    font-size: 18px;
+
+    margin-top: .75rem;
+}
+
+
+.action-btn {
+    height: 3rem;
+    width: 10rem;
+
+    align-self: center;
+
+    border: 2px var(--secondary-color) solid;
+    border-radius: 1rem;
+
+    background-color: #3882f6;
+
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 16px;
+
+    transition: background-color 200ms;
+}
+
+.action-btn:hover {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--btn-clr);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--backgr-color);
+    color: var(--hero-main-txt);
+
+    font-size: 16px;
+
+    padding: 1rem 0;
 }
